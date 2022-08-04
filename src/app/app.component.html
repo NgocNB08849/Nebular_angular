@@ -1,0 +1,20 @@
+<nb-layout>
+  <!-- <nb-layout-header>LOGO HERE</nb-layout-header> -->
+  <nb-layout-header>
+    <h1>Logo here</h1>
+    <span style="flex:1 auto"></span>
+    <button nbButton status="primary" style="float: right; justify-content: space-between;">Log Out</button>
+  </nb-layout-header>
+
+  <nb-sidebar>
+
+    <nb-menu [items]="items">
+    </nb-menu>
+
+  </nb-sidebar>
+
+  <nb-layout-column class="colored-column-basic">
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+
+</nb-layout>
